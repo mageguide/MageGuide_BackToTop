@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2018 MageGuide. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+                id="MageGuide_BackToTop::BackToTop_Label"
+                title="BackToTop"
+                module="MageGuide_BackToTop"
+                sortOrder="100"
+                parent="MageGuide_Mgbase::MageGuide"
+                resource="MageGuide_BackToTop::BackToTop_Label"
+        />
+        <add
+                id="MageGuide_BackToTop::BackToTop"
+                title="BackToTop Configuration"
+                module="MageGuide_BackToTop"
+                action="adminhtml/system_config/edit/section/mageguide_backtotop/"
+                sortOrder="1"
+                parent="MageGuide_BackToTop::BackToTop_Label"
+                resource="MageGuide_BackToTop::BackToTop"
+        />
+    </menu>
+</config>
